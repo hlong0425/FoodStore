@@ -1,0 +1,204 @@
+/************************/
+/* GENERAL COMPONENTS   */
+/************************/
+
+
+/* 
+01 Typoraphy System: 
+- Font size (px) 
+10 / 12 / 14 / 16/ 18/ 20/ 24/ 30/ 36/ 44/ 52/ 62/ 74/ 86/ 98
+
+- Spacing system (px)
+2 /4 /8 /12 /16 /24 /32 /48 /64 /80 /96 /128 
+
+- Font weights: 
+    default:400;
+    Medium: 500 ; 
+    Semi-bold:600; 
+    Bold: 700;  
+- Line height: 
+    default: 1; 
+    small: 1.05;
+    Medium: 1.2; 
+    Paragraph default: 1.6;
+- Letter spacing: 
+    -0.5px; 
+    0.75px;     
+
+
+    --------------------------------
+
+02 Color: 
+-Primary: #e67e22
+-Tints: #fae5d3
+        #eb984e 
+-Shades: #b8651b;
+-Accents:
+-Greys
+    #555
+    #333
+*/
+.margin-right-sm{
+    margin-right: 1.6rem !important;
+}
+
+.margin-bottom-md{
+    margin-bottom: 4.8rem !important;    
+}
+.center-text{
+    text-align: center;    
+}
+
+.btn{
+    display: inline-block;
+    border-radius: 8px;
+    padding: 1.6rem 3.2rem;
+    font-size: 2rem;
+    text-decoration: none;
+    transition: all 0.3s;
+    font-weight: 500;
+}
+
+.btn--full:link,
+
+.btn--full:visited{
+    background-color: #e67e22 !important;
+    color: white !important;
+}
+
+.btn--full:hover,
+.btn--full:active{
+    background-color: #b8651b !important;
+}
+
+.btn--outline:link,
+.btn--outline:visited
+{
+    background-color: #fff !important;
+    color: #333 !important;
+}
+
+.btn--outline:hover,
+.btn--outline:active{
+    box-shadow: inset 0 0 32px 3px #555;
+}
+
+.btn--form{
+    align-self: end;
+    padding: 1.2rem; 
+    background-color:#2e1907;
+    color: #fff;
+    border: none;
+}
+.btn--form:hover{
+    background-color:seashell;
+    color: #333;
+}
+
+/* HEADING */
+.heading-primary,.heading-secondary,.heading-tertiary{
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    color: #333;
+}
+
+.heading-primary{
+    margin-bottom: 4.8rem;
+    line-height: 1.05;
+    font-size: 5.2rem; 
+}
+
+.heading-secondary{
+    line-height: 1.2;
+    font-size: 4.4rem;
+    margin-bottom: 9.6rem;
+}
+.heading-tertiary{
+    font-size: 3.0rem; 
+    margin-bottom: 3.2rem;
+    line-height: 1.2;
+}
+
+.sub-heading{
+    display: inline-block;
+    font-size: 2rem; 
+    margin-bottom: 1.6rem;
+    color: #b8651b;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.75px;
+}
+/* end heading */
+
+.grid{
+    display: grid;
+    row-gap: 9.6rem; 
+    column-gap: 3.2rem;
+}
+
+.grid:not(:last-child){
+    margin-bottom: 9.6rem;
+}
+
+.grid--2-cols{
+    grid-template-columns: repeat(2,1fr);
+}
+
+.grid--3-cols{
+    grid-template-columns: repeat(3,1fr);
+}
+
+.grid--4-cols{
+    grid-template-columns: repeat(4,1fr);
+}
+
+.grid--5-cols{
+    grid-template-columns: repeat(5,1fr);
+}
+
+.grid--center-v{
+    align-items: center;
+}
+.grid--gapcol4{
+    column-gap: 4.8rem;
+}
+.container{
+    max-width: 130rem;
+    margin: 0 auto;
+    padding: 0 3.2rem; 
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    gap: 3.6rem;
+    flex-direction: column;
+}
+
+
+.list-item{
+    display: flex;
+    font-size: 1.8rem;
+    align-items: center;
+    gap: 1.6rem;
+    font-weight: 500;
+}
+
+.list-icon{ 
+    width: 3rem; 
+    height: 3rem; 
+    color: #e67e22;
+}
+
+.list-icon--not{
+    color: red !important;
+}
+
+*:focus{
+    outline: none;
+    box-shadow: 0 0 0 0.3rem rgba(248, 119, 14, 0.5);
+}
+
+
+
+
